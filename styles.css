@@ -1,0 +1,281 @@
+
+
+/* HighLevel styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --min-width: 50%;
+    --min-height: 400px;
+}
+
+
+/* Body Styles */
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Free for all styles */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.button-large {
+    height: 50px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.button-medium {
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.button-medium:hover {
+    transform: translateY(1px);
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Main div styles */
+.div {
+    min-width: var(--min-width);
+    min-height: var(--min-height);
+    background-color: rgb(61, 60, 60);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    margin: 10px;
+}
+
+
+/* homeContent styles */
+#homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: var(--min-width);
+    min-height: var(--min-height);
+}
+
+.welcome-text {
+    /* display: block; */
+    font-size: 30px;
+    text-align: center;
+}
+
+.question {
+    font-size: 20px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.choice-button {
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.choice-button:hover {
+    transform: translateY(2px);
+}
+
+.button-1 {
+    background-color:#FF5656;
+    box-shadow: 0 1px 10px 1px #FF5656;
+}
+
+.button-1:hover {
+    box-shadow: 1px 1px 10px 5px #FF5656;
+}
+
+.button-2:hover {
+    box-shadow: 1px 1px 10px 5px rgb(71, 181, 214);
+}
+
+.button-2 {
+    background-color:rgb(71, 181, 214);
+    box-shadow: 0 1px 10px 1px rgb(71, 181, 214);
+}
+
+
+/* newPasswordContent styles */
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF5656;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.back:hover {
+    box-shadow: 1px 1px 10px 5px #FF5656;
+    transform: translateY(-1px);
+}
+
+.use {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+.usename {
+    font-size: 20px;
+    font-weight: bold;
+    /* color: rgba(252,176,69,1); */
+}
+
+.use input:focus, input:focus {
+    outline: 2px solid rgb(71, 181, 214);
+}
+
+.usename-error {
+    display: none;
+}
+
+.pass-strength {
+    /* color: rgba(252,176,69,1); */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.copy-pass {
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    /* margin-top: -20px; */
+}
+
+.password {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.copy {
+    padding: 10px;
+    background-color: red;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.copy:hover {
+    transform: scale(1.05);
+}
+
+.generate {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.generate:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 5px 3px rgba(252,176,69,1), 1px 1px 2px 3px rgba(253,29,29,1),  1px 1px 5px 3px rgba(131,58,180,1);
+}
+
+.save-it {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    animation: shrink-and-grow 2s infinite ease-out;
+}
+
+.save-it:hover {
+    box-shadow: -2px -2px 2px 2px  rgba(139, 26, 245, 0.432);
+    transform: translateY(1px);
+}
+
+.find {
+    background-color: coral;
+}
+
+
+@keyframes shrink-and-grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.09);
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
